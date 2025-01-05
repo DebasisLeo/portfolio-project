@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
-import {Typed} from 'react-typed';
+import { Typed } from 'react-typed';
 
 import 'aos/dist/aos.css'; // Import AOS animations
 import AOS from 'aos';
 import D from '../assets/da.jpg';
+import Resume from '../assets/Resume.pdf'; // Import your resume PDF file
 
 const Hero = () => {
     // Reference for Typed component
@@ -88,9 +89,14 @@ const Hero = () => {
 
                 {/* Buttons */}
                 <div className="space-x-4 mt-6">
-                    <button className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full text-sm font-semibold transition duration-300 shadow-lg">
+                    <a
+                        href={Resume}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full text-sm font-semibold transition duration-300 shadow-lg"
+                    >
                         View My Resume
-                    </button>
+                    </a>
                 </div>
             </div>
 

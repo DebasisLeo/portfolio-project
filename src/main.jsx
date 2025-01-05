@@ -7,11 +7,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './componets/Root.jsx';
+import NotFoundPage from './componets/NotFoundPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<NotFoundPage></NotFoundPage>
   },
 ]);
 

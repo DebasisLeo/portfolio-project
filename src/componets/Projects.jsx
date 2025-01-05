@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import "aos/dist/aos.css"; // Import AOS styles
-import a1 from '../assets/a1.png'
-import a2 from '../assets/a2.png'
-import a3 from '../assets/a3.png'
-import a4 from '../assets/a4.png'
+
 
 const individualProjects = [
   {
     id: 1,
     name: "Lingo Bingo: A Vocabulary Learning Application",
-    image: {a1}, // Replace with actual image URL
+    image: 'https://i.ibb.co.com/kDYpdc9/a1.jpg', // Replace with actual image URL
     techStack: "Tailwind, React, MongoDB, Firebase, DaisyUI",
     description:
       "An interactive vocabulary learning application designed to help users improve their vocabulary skills.",
@@ -25,7 +22,7 @@ const individualProjects = [
   {
     id: 2,
     name: "Modern Hotel Booking Platform",
-    image: {a2}, // Replace with actual image URL
+    image: 'https://i.ibb.co.com/ZhcL3GT/a2.webp', // Replace with actual image URL
     techStack: "Tailwind, React, MongoDB, Firebase, DaisyUI",
     description:
       "A platform to search and book hotels, providing real-time availability and booking functionality.",
@@ -39,7 +36,7 @@ const individualProjects = [
   {
     id: 3,
     name: "Visa Navigator Portal",
-    image: {a3}, // Replace with actual image URL
+    image: 'https://i.ibb.co.com/5BCZLm3/a3.jpg', // Replace with actual image URL
     techStack: "Tailwind, React, MongoDB, Firebase, DaisyUI",
     description:
       "A portal to help users navigate through the visa application process with real-time status tracking.",
@@ -55,10 +52,10 @@ const individualProjects = [
 const teamProject = {
   id: 4,
   name: "Teamly - E-Commerce Platform",
-  image: {a4}, // Replace with actual image URL
+  image: 'https://i.ibb.co.com/R45hc1P/a4.webp', // Replace with actual image URL
   techStack: "Tailwind, React, MongoDB, Firebase, DaisyUI",
   description: "An e-commerce platform developed by our team for online shopping.",
-  liveLink: "https://example-teamly.com",
+  liveLink: "https://fashionbarnshop.com/",
   githubLink: "https://github.com/username/teamly",
   challenges:
     "Coordinating tasks between team members and handling real-time updates across the platform.",
