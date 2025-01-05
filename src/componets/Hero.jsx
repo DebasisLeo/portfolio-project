@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
 import {Typed} from 'react-typed';
 
 import 'aos/dist/aos.css'; // Import AOS animations
@@ -42,7 +42,7 @@ const Hero = () => {
                 data-aos="fade-right"
             >
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                    Hi, I'm <span className="text-blue-400">Bivas</span>
+                    Hi, I'm <span className="text-blue-400">Debasis</span>
                 </h1>
 
                 {/* Dynamic Typing Effect */}
@@ -53,7 +53,7 @@ const Hero = () => {
                 {/* Social Media Links */}
                 <div className="flex space-x-4 mt-4 backdrop-blur-md bg-white/10 p-4 rounded-lg shadow-lg">
                     <a
-                        href="https://github.com"
+                        href="https://github.com/DebasisLeo"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-2xl text-gray-400 hover:text-blue-400 transition duration-300"
@@ -61,7 +61,7 @@ const Hero = () => {
                         <FaGithub />
                     </a>
                     <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/debashis-joy-507818313/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-2xl text-gray-400 hover:text-blue-400 transition duration-300"
@@ -69,7 +69,7 @@ const Hero = () => {
                         <FaLinkedin />
                     </a>
                     <a
-                        href="https://facebook.com"
+                        href="https://www.facebook.com/debasis.heron"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-2xl text-gray-400 hover:text-blue-400 transition duration-300"
@@ -77,12 +77,12 @@ const Hero = () => {
                         <FaFacebook />
                     </a>
                     <a
-                        href="https://instagram.com"
+                        href="https://x.com/leo_debasis?s=21"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-2xl text-gray-400 hover:text-blue-400 transition duration-300"
                     >
-                        <FaInstagram />
+                        <FaTwitter />
                     </a>
                 </div>
 
@@ -103,7 +103,7 @@ const Hero = () => {
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg border-4 border-blue-500 relative z-10">
                     <img
                         src={D} // Replace with your photo URL
-                        alt="John Doe"
+                        alt=""
                         className="w-full h-full object-cover"
                     />
                 </div>
