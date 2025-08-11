@@ -79,18 +79,18 @@ const Experience = () => {
                         </motion.p>
                        
                         <motion.a
-                            href="https://fashionbarnshop.com/" // Replace with the actual link
+                            href="https://fashionbarnshop.com/" 
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center text-3xl font-extrabold  space-x-2"
                             animate={{
-                                x: [0, 10, 0], // Move right and back
-                                color: ["#38bdf8", "#ff0000", "#38bdf8"], // From teal to red and back to teal
+                                x: [0, 10, 0], 
+                                color: ["#38bdf8", "#ff0000", "#38bdf8"], 
                             }}
                             transition={{
-                                duration: 2, // Total duration for one cycle
-                                repeat: Infinity, // Repeat infinitely
-                                ease: "easeInOut", // Smooth easing
+                                duration: 2, 
+                                repeat: Infinity, 
+                                ease: "easeInOut", 
                             }}
                         >
                             <FaProjectDiagram className="text-2xl" />
@@ -100,7 +100,7 @@ const Experience = () => {
 
                     </motion.div>
 
-                    {/* Icon + Visual */}
+                   
                     <motion.div
                         className="flex justify-center md:justify-end"
                         initial="hidden"

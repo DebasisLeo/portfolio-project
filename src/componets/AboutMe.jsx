@@ -3,7 +3,7 @@ import { FaLaptopCode, FaBrain, FaShieldAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const AboutMe = () => {
-  // Animation variants for framer-motion
+  // animation  for framer-motion
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { stiffness: 120, damping: 17 } },
@@ -15,11 +15,11 @@ const AboutMe = () => {
   };
 
   const highlightText = {
-    hidden: { opacity: 0, x: -100, color: '#fff', filter: 'blur(4px)' },  // Start from left, blur, white color
+    hidden: { opacity: 0, x: -100, color: '#fff', filter: 'blur(4px)' },  
     visible: {
       opacity: 1,
-      x: 0,  // Move to the normal position
-      color: '#ffcc00', // Change to a new color (you can use any color you want)
+      x: 0,  
+      color: '#ffcc00', 
       filter: 'blur(0)',
       transition: {
         duration: 1,
@@ -37,7 +37,7 @@ const AboutMe = () => {
             initial="hidden"
             whileInView="visible"
             variants={highlightText}
-            viewport={{ once: false }} // Trigger each time it enters the viewport
+            viewport={{ once: false }} 
           >
             About Me
           </motion.h2>

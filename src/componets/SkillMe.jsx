@@ -52,13 +52,13 @@ const SkillMe = () => {
               key={index}
               className="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
               animate={{
-                x: [0, -20, 20, 0], // Moves left and right continuously
+                x: [0, -20, 20, 0], 
               }}
               transition={{
-                duration: 3, // Time for one cycle
-                repeat: Infinity, // Repeat animation indefinitely
-                ease: "easeInOut", // Smooth easing for motion
-                delay: index * 0.1, // Slight stagger for each card
+                duration: 3, 
+                repeat: Infinity, 
+                ease: "easeInOut", 
+                delay: index * 0.1, 
               }}
             >
               {skill.icon}

@@ -19,6 +19,7 @@ const Home = () => {
             <Projects></Projects>
             <ContactMe></ContactMe>
             
+            
         </div>
     );
 };

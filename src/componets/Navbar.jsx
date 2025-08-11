@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaUserCircle } from 'react-icons/fa';
-import 'aos/dist/aos.css'; // Import AOS animations
-import AOS from 'aos'; // Import AOS initialization
+import 'aos/dist/aos.css'; 
+import AOS from 'aos'; 
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -9,9 +9,9 @@ const Navbar = () => {
     // Initialize AOS animations
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration in milliseconds
-            easing: 'ease-in-out', // Animation easing
-            once: true, // Whether animation should happen only once
+            duration: 1000, 
+            easing: 'ease-in-out', 
+            once: true, 
         });
     }, []);
 
@@ -23,12 +23,12 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-800 text-white shadow-lg fixed top-0 left-0 w-full z-50">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
-                {/* Left Side - Logo */}
+                {/* Left Side < Logo> */}
                 <div className="text-2xl font-bold flex items-center" data-aos="fade-right">
                     <FaUserCircle className="mr-2 text-3xl" /> MyPortfolio
                 </div>
 
-                {/* Middle Side - Navigation Links */}
+                {/* Middle Side <Navigation Links> */}
                 <ul
                     className={`${
                         isMobileMenuOpen ? 'block' : 'hidden'
@@ -44,7 +44,7 @@ const Navbar = () => {
                     <li><a href="#contact" className="block py-2 px-4 hover:text-blue-400 transition duration-300">Contact Me</a></li>
                 </ul>
 
-                {/* Right Side - Button */}
+                {/* Right Side Button */}
                 <div data-aos="fade-left" className="hidden md:block">
                     <a
                         href="#contact"

@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import { Typewriter } from "react-simple-typewriter"; // Import the Typewriter component
-import AOS from "aos"; // For scroll animations
-import "aos/dist/aos.css"; // Import AOS CSS for animations
+import { Typewriter } from "react-simple-typewriter"; 
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 
 const WelcomeMessage = () => {
   useEffect(() => {
-    AOS.init(); // Initialize AOS for scroll animations
-    AOS.refresh(); // Refresh animations in case the content has changed dynamically
+    AOS.init(); 
+    AOS.refresh(); 
   }, []);
 
   return (
@@ -25,7 +25,7 @@ const WelcomeMessage = () => {
                 "Passionate About Machine Learning.",
                 "Advocate for Cybersecurity.",
               ]}
-              loop={0} // Set to 0 for no infinite loop
+              loop={0} 
               cursor
               cursorStyle="|"
               typeSpeed={100}

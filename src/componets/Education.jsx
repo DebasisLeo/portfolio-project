@@ -20,7 +20,7 @@ const Education = () => {
       id="education"
     >
       <div className="container mx-auto px-6 md:px-12">
-        {/* Title Section */}
+        
         <div className="text-center mb-12">
           <motion.h2
             className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent"
@@ -55,12 +55,12 @@ const Education = () => {
           <motion.h3
             className="text-2xl md:text-3xl font-semibold mb-4"
             animate={{
-              color: ["#34D399", "#60A5FA", "#A78BFA","#FFFFFF", "#34D399"], // Color cycle
+              color: ["#34D399", "#60A5FA", "#A78BFA","#FFFFFF", "#34D399"], 
             }}
             transition={{
-              duration: 3, // Time for one cycle
-              repeat: Infinity, // Infinite repeat
-              ease: "easeInOut", // Smooth easing
+              duration: 3, 
+              repeat: Infinity, 
+              ease: "easeInOut", 
             }}
           >
             Shahjalal University of Science and Technology, Sylhet

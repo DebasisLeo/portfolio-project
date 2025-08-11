@@ -47,6 +47,7 @@ const NotFoundPage = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

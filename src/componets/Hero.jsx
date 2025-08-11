@@ -19,7 +19,7 @@ const Hero = () => {
             once: true,
         });
 
-        // Initialize the Typed component only when the ref is available
+        
         if (typedRef.current) {
             new Typed(typedRef.current, {
                 strings: [
@@ -87,7 +87,7 @@ const Hero = () => {
                     </a>
                 </div>
 
-                {/* Buttons */}
+               
                 <div className="space-x-4 mt-6 ">
                     <a
                         href={Resume}
@@ -108,7 +108,7 @@ const Hero = () => {
                 {/* Profile Image */}
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg border-4 border-blue-500 relative z-10">
                     <img
-                        src={D} // Replace with your photo URL
+                        src={D} 
                         alt=""
                         className="w-full h-full object-cover"
                     />
@@ -119,7 +119,7 @@ const Hero = () => {
                 <div className="absolute -bottom-6 -left-6 w-24 h-24 rounded-full bg-gray-700 border-2 border-blue-500 animate-float"></div>
             </div>
 
-            {/* Scroll Prompt */}
+            
             <div
                 className="absolute bottom-6 text-center w-full flex justify-center"
                 data-aos="fade-up"

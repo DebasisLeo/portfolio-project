@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import emailjs from "emailjs-com"; // Import EmailJS
 
 const ContactMe = () => {
-  const [showModal, setShowModal] = useState(false); // State to show modal
+  const [showModal, setShowModal] = useState(false); 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,16 +21,16 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_0yzct53", // Replace with your actual service ID
-        "template_i9b5xbq", // Replace with your actual template ID
+        "service_0yzct53", 
+        "template_i9b5xbq", 
         e.target,
-        "NC2sBAQhN_X2YSsZ0" // Replace with your actual User ID
+        "NC2sBAQhN_X2YSsZ0" 
       )
       .then(
         (result) => {
           console.log("Message Sent", result.text);
           setShowModal(true);
-          // Clear form fields after successful submission
+          
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
@@ -41,11 +41,11 @@ const ContactMe = () => {
 
   return (
     <section
-      className="bg-gradient-to-r from-purple-500 via-indigo-600 to-blue-700 py-16 md:py-24 text-white" // Updated gradient colors for a unique design
+      className="bg-gradient-to-r from-purple-500 via-indigo-600 to-blue-700 py-16 md:py-24 text-white" 
       id="contact"
     >
       <div className="container mx-auto px-6 md:px-12">
-        {/* Title Section */}
+        
         <div className="text-center mb-12">
           <motion.h2
             className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent"
@@ -62,7 +62,7 @@ const ContactMe = () => {
         </div>
 
         <div className="flex flex-col md:flex-row gap-12">
-          {/* Left Side - Message Form */}
+          
           <motion.div
             className="flex flex-col items-center justify-center text-center md:w-1/2 bg-gray-800 p-8 rounded-lg shadow-2xl"
             initial={{ opacity: 0, x: -100 }}
@@ -113,7 +113,7 @@ const ContactMe = () => {
             </form>
           </motion.div>
 
-          {/* Right Side - Contact Information */}
+         
           <motion.div
             className="md:w-1/2 bg-gray-800 p-8 rounded-lg shadow-2xl"
             initial={{ opacity: 0, x: 100 }}
@@ -140,7 +140,7 @@ const ContactMe = () => {
         </div>
       </div>
 
-      {/* Success Modal */}
+      
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-gray-800 rounded-lg p-8 w-11/12 md:w-1/3">

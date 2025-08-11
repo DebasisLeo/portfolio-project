@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
 
 
 const individualProjects = [
@@ -64,7 +64,7 @@ const individualProjects = [
 const teamProject = {
   id: 4,
   name: "Teamly - E-Commerce Platform",
-  image: 'https://i.ibb.co.com/R45hc1P/a4.webp', // Replace with actual image URL
+  image: 'https://i.ibb.co.com/R45hc1P/a4.webp', 
   techStack: "Tailwind, React, MongoDB, Firebase, DaisyUI",
   description: "An e-commerce platform developed by our team for online shopping.",
   liveLink: "https://fashionbarnshop.com/",
