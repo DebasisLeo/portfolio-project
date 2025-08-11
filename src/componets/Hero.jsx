@@ -36,14 +36,14 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen flex flex-col md:flex-row justify-center items-center px-6 md:px-12 relative">
+        <section className="bg-gradient-to-b from-gray-900 via-gray-800 to-cyan-100 text-white min-h-screen flex flex-col md:flex-row justify-center items-center px-6 md:px-12 relative">
             {/* Left Side */}
             <div
                 className="flex flex-col justify-center items-start space-y-6 w-full md:w-1/2"
                 data-aos="fade-right"
             >
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                    Hi, I'm <span className="text-blue-400">Debasis</span>
+                    Hi, This Is <span className="text-blue-400">DEBASIS</span>
                 </h1>
 
                 {/* Dynamic Typing Effect */}
@@ -88,12 +88,12 @@ const Hero = () => {
                 </div>
 
                 {/* Buttons */}
-                <div className="space-x-4 mt-6">
+                <div className="space-x-4 mt-6 ">
                     <a
                         href={Resume}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full text-sm font-semibold transition duration-300 shadow-lg"
+                        className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full text-2xl font-semibold transition duration-300 shadow-lg"
                     >
                         View My Resume
                     </a>

@@ -34,7 +34,7 @@ const Experience = () => {
 
     return (
         <section
-            className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-16 md:py-24"
+            className="bg-gradient-to-r from-cyan-800 via-gray-800 to-gray-600 text-white py-16 md:py-24"
             id="experience"
         >
             <div className="container mx-auto px-6 md:px-12">

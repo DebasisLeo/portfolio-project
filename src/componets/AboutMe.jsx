@@ -42,7 +42,7 @@ const AboutMe = () => {
             About Me
           </motion.h2>
           <motion.p
-            className="text-lg md:text-xl text-gray-200"
+            className="text-2xl font-bold text-gray-200"
             initial="hidden"
             whileInView="visible"
             variants={fadeIn}
@@ -53,7 +53,7 @@ const AboutMe = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-          <div className="space-y-6 text-lg text-gray-200">
+          <div className="space-y-6 text-lg font-bold text-gray-200">
             <motion.p
               initial="hidden"
               whileInView="visible"

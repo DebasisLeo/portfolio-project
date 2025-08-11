@@ -8,7 +8,7 @@ const individualProjects = [
   {
     id: 1,
     name: "Lingo Bingo: A Vocabulary Learning Application",
-    image: 'https://i.ibb.co.com/kDYpdc9/a1.jpg', // Replace with actual image URL
+    image: 'https://i.ibb.co.com/kDYpdc9/a1.jpg',
     techStack: "Tailwind, React, MongoDB, Firebase, DaisyUI",
     description:
       "An interactive vocabulary learning application designed to help users improve their vocabulary skills.",
@@ -22,7 +22,7 @@ const individualProjects = [
   {
     id: 2,
     name: "Modern Hotel Booking Platform",
-    image: 'https://i.ibb.co.com/ZhcL3GT/a2.webp', // Replace with actual image URL
+    image: 'https://i.ibb.co.com/ZhcL3GT/a2.webp',
     techStack: "Tailwind, React, MongoDB, Firebase, DaisyUI",
     description:
       "A platform to search and book hotels, providing real-time availability and booking functionality.",
@@ -36,7 +36,7 @@ const individualProjects = [
   {
     id: 3,
     name: "Visa Navigator Portal",
-    image: 'https://i.ibb.co.com/5BCZLm3/a3.jpg', // Replace with actual image URL
+    image: 'https://i.ibb.co.com/5BCZLm3/a3.jpg',
     techStack: "Tailwind, React, MongoDB, Firebase, DaisyUI",
     description:
       "A portal to help users navigate through the visa application process with real-time status tracking.",
@@ -47,6 +47,18 @@ const individualProjects = [
     details:
       "Visa Navigator helps users apply for visas, track their visa status in real-time, and manage visa updates. The platform features both dark mode and light mode for better user experience. Users can apply, cancel, and update their visa status in real-time. Integrating various APIs to provide accurate information and ensuring seamless user interaction were the main challenges during development.",
   },
+  {
+    id: 4,
+    name: "Platinum Lounge",
+    image: 'https://i.ibb.co.com/8DD0wWS6/premium-photo-1663012975679-4f257055a5e3-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64.jpg',
+    techStack: "React, Tailwind CSS, MongoDB, Firebase, DaisyUI",
+    description: "A restaurant website for Platinum Lounge offering delicious food and online ordering.",
+    liveLink: "https://bistro-boss-e3f5a.web.app/",
+    githubLink: "https://github.com/DebasisLeo/crave-client",
+    challenges: "Designing a responsive UI and integrating Firebase and MongoDB for smooth user experience.",
+    details: "Platinum Lounge is a restaurant website showcasing menu items with a user-friendly interface. The project involved building responsive layouts, implementing online ordering, and real-time updates using Firebase and MongoDB to enhance customer experience.",
+  }
+  
 ];
 
 const teamProject = {
@@ -68,7 +80,7 @@ const Projects = () => {
 
   return (
     <section
-      className="bg-gradient-to-r from-gray-800 via-gray-900 to-black py-16 md:py-24 text-white"
+      className="bg-gradient-to-r from-gray-800 via-cyan-500 to-black py-16 md:py-24 text-white"
       id="projects"
     >
       <div className="container mx-auto px-6 md:px-12">
