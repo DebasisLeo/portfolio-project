@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
 import { Typed } from 'react-typed';
 
-import 'aos/dist/aos.css'; // Import AOS animations
+import 'aos/dist/aos.css'; 
 import AOS from 'aos';
 import D from '../assets/da.jpg';
-import Resume from '../assets/Resume.pdf'; // Import your resume PDF file
+import Resume from '../assets/Resume.pdf'; 
 
 const Hero = () => {
     // Reference for Typed component

@@ -44,7 +44,7 @@ const Navbar = () => {
                     <li><a href="#contact" className="block py-2 px-4 hover:text-blue-400 transition duration-300">Contact Me</a></li>
                 </ul>
 
-                {/* Right Side Button */}
+              
                 <div data-aos="fade-left" className="hidden md:block">
                     <a
                         href="#contact"

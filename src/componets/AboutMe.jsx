@@ -3,7 +3,7 @@ import { FaLaptopCode, FaBrain, FaShieldAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const AboutMe = () => {
-  // animation  for framer-motion
+  // animation  for framerMmotion
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { stiffness: 120, damping: 17 } },

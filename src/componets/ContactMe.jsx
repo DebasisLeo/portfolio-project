@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "aos/dist/aos.css";
-import emailjs from "emailjs-com"; // Import EmailJS
+import emailjs from "emailjs-com";
 
 const ContactMe = () => {
-  const [showModal, setShowModal] = useState(false); 
+  const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,16 +21,15 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_0yzct53", 
-        "template_i9b5xbq", 
+        "service_al8rsvw",
+        "template_i9b5xbq",
         e.target,
-        "NC2sBAQhN_X2YSsZ0" 
+        "NC2sBAQhN_X2YSsZ0"
       )
       .then(
         (result) => {
           console.log("Message Sent", result.text);
           setShowModal(true);
-          
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
@@ -39,13 +38,17 @@ const ContactMe = () => {
       );
   };
 
+  
+  useEffect(() => {
+    if (showModal) {
+      const timer = setTimeout(() => setShowModal(false), 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [showModal]);
+
   return (
-    <section
-      className="bg-gradient-to-r from-purple-500 via-indigo-600 to-blue-700 py-16 md:py-24 text-white" 
-      id="contact"
-    >
+    <section className="bg-gradient-to-r from-purple-500 via-indigo-600 to-blue-700 py-16 md:py-24 text-white" id="contact">
       <div className="container mx-auto px-6 md:px-12">
-        
         <div className="text-center mb-12">
           <motion.h2
             className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent"
@@ -62,7 +65,7 @@ const ContactMe = () => {
         </div>
 
         <div className="flex flex-col md:flex-row gap-12">
-          
+          {/* Contact Form */}
           <motion.div
             className="flex flex-col items-center justify-center text-center md:w-1/2 bg-gray-800 p-8 rounded-lg shadow-2xl"
             initial={{ opacity: 0, x: -100 }}
@@ -113,7 +116,7 @@ const ContactMe = () => {
             </form>
           </motion.div>
 
-         
+          {/* Contact Info */}
           <motion.div
             className="md:w-1/2 bg-gray-800 p-8 rounded-lg shadow-2xl"
             initial={{ opacity: 0, x: 100 }}
@@ -140,23 +143,35 @@ const ContactMe = () => {
         </div>
       </div>
 
-      
-      {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-gray-800 rounded-lg p-8 w-11/12 md:w-1/3">
-            <h3 className="text-2xl font-semibold text-teal-400">Message Sent!</h3>
-            <p className="text-gray-300 mt-4">
-              Your message has been sent successfully. I will get back to you as soon as possible.
-            </p>
-            <button
-              onClick={() => setShowModal(false)}
-              className="mt-6 px-4 py-2 bg-red-500 hover:bg-red-400 text-white rounded"
+      {/* Success Modal */}
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="bg-gray-800 rounded-lg p-8 w-11/12 md:w-1/3 shadow-2xl"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
             >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+              <h3 className="text-2xl font-semibold text-teal-400">✅ Message Sent!</h3>
+              <p className="text-gray-300 mt-4">
+                Your message has been sent successfully. I will get back to you as soon as possible.
+              </p>
+              <button
+                onClick={() => setShowModal(false)}
+                className="mt-6 px-4 py-2 bg-red-500 hover:bg-red-400 text-white rounded"
+              >
+                Close
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
